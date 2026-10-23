@@ -1,0 +1,8 @@
+private_data/
+*.xlsx
+*.xls
+*.csv
+*.npy
+.ipynb_checkpoints/
+__pycache__/
+.env
