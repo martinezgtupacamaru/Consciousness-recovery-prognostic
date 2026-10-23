@@ -56,19 +56,4 @@ The following figures are reproduced from the supplied manuscript. **Manuscript 
 
 [`regional_complexity_prognosis.ipynb`](regional_complexity_prognosis.ipynb) — cleaned implementation of the original statistical-learning workflow, with explanatory notes and no embedded confidential data or execution outputs.
 
-### Running locally
-
-```bash
-python -m pip install -r requirements.txt
-jupyter notebook regional_complexity_prognosis.ipynb
-```
-
-Place an **authorized** table at `private_data/propofol_features.csv` containing `Recovery` (0/1), `Occipital`, `Parietal`, `Temporal`, `Frontal`, `Central`, and optionally `Whole`. One row corresponds to one participant. The `private_data/` directory is excluded from version control. Never commit patient identifiers or outcomes.
-
-The notebook covers statistical learning on precomputed features, **not** raw EEG preprocessing or ordinal-pattern extraction. Its controlled random seeds and cleaned implementation are not guaranteed to reproduce every numerical value from the historical research environment. No independent external validation was performed.
-
-## Research context
-
-The results suggest that recovery-related information may depend on the **joint nonlinear configuration** of statistical complexity across regions under propofol, rather than whole-brain averages or individual-region mean differences. The small sample and lack of an external validation cohort mean this remains an exploratory candidate neural correlate, not a clinically deployable prognostic biomarker.
-
-**Author:** Guillermo Martinez Villar and collaborators. See the accompanying manuscript for full authorship, methodology, and interpretation.
+**Author:** Guillermo Martinez Villar and collaborators. 
